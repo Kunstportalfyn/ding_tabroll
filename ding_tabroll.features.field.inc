@@ -306,7 +306,7 @@ $fields = array();
   );
   
    // Exported field: 'node-field_municipality_ref'.
-  $fields['node-field_municipality_ref'] = array(
+  $fields['node-ding_tabroll-field_municipality_ref'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
