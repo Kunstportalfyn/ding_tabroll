@@ -107,8 +107,8 @@ $fields = array();
             'video' => 0,
           ),
           'browser_plugins' => array(
-            'ding_content' => 0,
-            'municipality' => 0,
+            'article' => 0,
+            'library' => 0,
             'media_default--media_browser_1' => 0,
             'media_default--media_browser_my_files' => 0,
             'upload' => 0,
@@ -305,14 +305,14 @@ $fields = array();
     ),
   );
   
-   // Exported field: 'node-field_municipality_ref'.
-  $fields['node-ding_tabroll-field_municipality_ref'] = array(
+   // Exported field: 'node-ding_tabroll-field_ding_tabroll_municipality_ref'.
+  $fields['node-ding_tabroll-field_ding_tabroll_municipality_ref'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_municipality_ref',
+      'field_name' => 'field_ding_tabroll_municipality_ref',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -378,7 +378,7 @@ $fields = array();
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_municipality_ref',
+      'field_name' => 'field_ding_tabroll_municipality_ref',
       'label' => 'municipality',
       'required' => 0,
       'settings' => array(
@@ -399,7 +399,7 @@ $fields = array();
   t('image');
   t('ding_tabroll_lead');
   t('ding_tabroll_link');
-  t('municipality_ref');
+  t('ding_tabroll_municipality_ref');
 
   return $fields;
 }
