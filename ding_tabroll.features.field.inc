@@ -237,11 +237,9 @@ $fields = array();
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'ding_campaign' => 'ding_campaign',
-            'ding_event' => 'ding_event',
             'municipalities' => 'municipalities',
-            'ding_news' => 'ding_news',
-            'ding_page' => 'ding_page',
+            'article' => 'article',
+            'page' => 'page',
           ),
         ),
         'profile2_private' => FALSE,
@@ -305,14 +303,14 @@ $fields = array();
     ),
   );
   
-   // Exported field: 'node-ding_tabroll-field_ding_tabroll_municipality_ref'.
-  $fields['node-ding_tabroll-field_ding_tabroll_municipality_ref'] = array(
+   // Exported field: 'node-ding_tabroll-field_municipality_ref'.
+  $fields['node-ding_tabroll-field_municipality_ref'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_ding_tabroll_municipality_ref',
+      'field_name' => 'field_municipality_ref',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -378,7 +376,7 @@ $fields = array();
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ding_tabroll_municipality_ref',
+      'field_name' => 'field_municipality_ref',
       'label' => 'municipality',
       'required' => 0,
       'settings' => array(
@@ -399,7 +397,7 @@ $fields = array();
   t('image');
   t('ding_tabroll_lead');
   t('ding_tabroll_link');
-  t('ding_tabroll_municipality_ref');
+  t('municipality_ref');
 
   return $fields;
 }
