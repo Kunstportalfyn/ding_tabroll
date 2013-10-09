@@ -14,9 +14,9 @@ function ding_tabroll_create_nodequeues() {
 
   $nodequeue = new stdClass();
   $nodequeue->name = 'ding_tabroll';
-  $nodequeue->title = 'frontpage tabroll';
+  $nodequeue->title = 'Frontpage Tabroll';
   $nodequeue->reference = NULL;
-  $nodequeue->subqueue_title = '';
+  $nodequeue->subqueue_title = 'Frontpage';
   $nodequeue->subqueues = '1';
   $nodequeue->owner = 'nodequeue';
   $nodequeue->add_subqueue = array(
@@ -29,7 +29,7 @@ function ding_tabroll_create_nodequeues() {
   $nodequeue->title = 'municipalities';
   $nodequeue->owner = 'smartqueue_nodetypes';
   $nodequeue->reference = 'municipalities';
-  $nodequeue->subqueue_title = 'kommuner';
+  $nodequeue->subqueue_title = '%subqueue';
   $export['ding_tabroll_for_municipalities'] = $nodequeue;
 
   foreach ($export as $name => $nodequeue) {
