@@ -9,12 +9,12 @@ A tabroll-carousel will not repeat its cycle unless at least 5 itemsa have been 
 
 The imagecache preset used by tabroll `460_240_crop` includes the action to make the image greyscale. This can be modified - it is greyscale because of the use of images on vejlebibs Ding!
 
-Every rolltab can reference a library on the Ding!-site. This is entirely optional, and the only thing provided by this is the name of the library printed out as a CSS class on the image and info elements. We use this on vejlebibs Ding! to show the tabs with colored overlays.
+Every rolltab can reference a municipality on the Ding!-site. This is entirely optional, and the only thing provided by this is the name of the municipality printed out as a CSS class on the image and info elements. We use this on vejlebibs Ding! to show the tabs with colored overlays.
 
-## Ding! Library Tabroll
-The submodule `ding_library_tabroll` adds support for per-library carousels. The nodequeue, *Library tabroll*, contains subqueues for each library. Content added to these nodequeues are shown on the librarys frontpage. If no nodes are added to a nodequeue the carousel is not shown.
+## Ding! municipality Tabroll
+The submodule `municipalities_tabroll` adds support for per-municipality carousels. The nodequeue, *municipality tabroll*, contains subqueues for each municipality. Content added to these nodequeues are shown on the municipalitys frontpage. If no nodes are added to a nodequeue the carousel is not shown.
 
-Note that a rolltab is *not* automatically added to a librarys nodequeue if it references the library.
+Note that a rolltab is *not* automatically added to a municipalitys nodequeue if it references the municipality.
 
 ## Update
 The latest version of Ding! Tabroll uses nodequeues for managing tabroll carousels.

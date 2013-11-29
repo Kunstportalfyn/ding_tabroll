@@ -52,7 +52,7 @@
     line-height: 17px;
     overflow: hidden;
     padding: 5px 5px 0 20px;
-    background: none repeat scroll 0 0 #999999;
+    background: none repeat scroll 0 0 #1a3849;
     font-weight: normal;
     height: 42px;
     text-transform: uppercase;
@@ -80,7 +80,8 @@
 #featured .ui-tabs-panel .info {
     background: url("../images/bluegbg-75.png") repeat scroll 0 0 transparent;
     bottom: 0;
-    height: 90px;
+    height: 40%;
+    line-height: 20px;
     left: 0;
     position: absolute;
     width: 70%;

@@ -1,6 +1,6 @@
 <?php
 /**
- * @file installs frontpage and libraries nodequeue.
+ * @file installs frontpage and municipalities nodequeue.
  * 
  */
 
@@ -14,7 +14,8 @@ function ding_tabroll_create_nodequeues() {
 
   $nodequeue = new stdClass();
   $nodequeue->name = 'ding_tabroll';
-  $nodequeue->title = 'frontpage tabroll';
+  $nodequeue->title = 'Frontpage Tabroll';
+  $nodequeue->reference = NULL;
   $nodequeue->subqueue_title = 'Frontpage';
   $nodequeue->subqueues = '1';
   $nodequeue->owner = 'nodequeue';
@@ -24,12 +25,12 @@ function ding_tabroll_create_nodequeues() {
   $export['ding_tabroll'] = $nodequeue;
 
   $nodequeue = new stdClass();
-  $nodequeue->name = 'ding_tabroll_for_libraries';
-  $nodequeue->title = 'libraries';
+  $nodequeue->name = 'ding_tabroll_for_municipalities';
+  $nodequeue->title = 'municipalities';
   $nodequeue->owner = 'smartqueue_nodetypes';
-  $nodequeue->reference = 'ding_library';
+  $nodequeue->reference = 'municipalities';
   $nodequeue->subqueue_title = '%subqueue';
-  $export['ding_tabroll_for_libraries'] = $nodequeue;
+  $export['ding_tabroll_for_municipalities'] = $nodequeue;
 
   foreach ($export as $name => $nodequeue) {
     // $nodequeue->name = $name;
@@ -54,7 +55,7 @@ function ding_tabroll_create_nodequeues() {
    $queues = nodequeue_load_queues(nodequeue_get_all_qids(200));
   foreach ($queues as $queue) {
     if ($queue->owner == 'smartqueue_nodetypes') {
-      nodequeue_api_subqueues($queue, $node);
+      nodequeue_api_subqueues($queue, NULL);
     }
   }
 }
