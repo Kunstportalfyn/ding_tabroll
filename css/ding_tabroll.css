@@ -102,7 +102,7 @@
 #featured .ui-tabs-panel .info h3 {
     margin: 10px 10px 0 20px;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 20px;
     text-transform: uppercase;
@@ -117,6 +117,7 @@
 }
 
 #featured .ui-tabs-panel .info p {
+    font-size: 14px;
     color: #FFFFFF;
     margin: 0 20px;
     width: 90%;
