@@ -246,51 +246,6 @@ function ding_tabroll_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ding_tabroll-field_ding_tabroll_library_ref'
-  $field_instances['node-ding_tabroll-field_ding_tabroll_library_ref'] = array(
-    'bundle' => 'ding_tabroll',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Insert this into the chosen library nodequeue.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser_highlight' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ding_tabroll_library_ref',
-    'label' => 'Library',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-ding_tabroll-field_ding_tabroll_link'
   $field_instances['node-ding_tabroll-field_ding_tabroll_link'] = array(
     'bundle' => 'ding_tabroll',
@@ -346,18 +301,63 @@ function ding_tabroll_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ding_tabroll-field_municipality_ref'
+  $field_instances['node-ding_tabroll-field_municipality_ref'] = array(
+    'bundle' => 'ding_tabroll',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Insert into the chosen municipality nodequeue, or frontpage if none is chosen. (Only on creation, not on update)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_highlight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_municipality_ref',
+    'label' => 'municipality',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 35,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Anchor');
   t('External');
   t('Image');
-  t('Insert this into the chosen library nodequeue.');
   t('Lead');
-  t('Library');
   t('Link');
   t('Use this for external links (other domains) - this will only be used if the internal link field is empty.');
   t('Use this to make the browser scroll down to an id (do not include the preceding #)');
   t('Write part of the node title to search for content to link to.');
+  t('Insert into the chosen municipality nodequeue, or frontpage if none is chosen. (Only on creation, not on update)');
+  t('municipality');
 
   return $field_instances;
 }
