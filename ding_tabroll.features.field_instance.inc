@@ -332,7 +332,7 @@ function ding_tabroll_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_municipality_ref',
-    'label' => 'municipality',
+    'label' => 'Municipality',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -357,7 +357,7 @@ function ding_tabroll_field_default_field_instances() {
   t('Use this for external links (other domains) - this will only be used if the internal link field is empty.');
   t('Use this to make the browser scroll down to an id (do not include the preceding #)');
   t('Write part of the node title to search for content to link to.');
-  t('municipality');
+  t('Municipality');
 
   return $field_instances;
 }
