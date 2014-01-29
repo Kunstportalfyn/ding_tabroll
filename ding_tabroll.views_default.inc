@@ -15,7 +15,7 @@ function ding_tabroll_views_default_views() {
   $view->description = 'Display a list of all nodes in queue \'municipalities\'';
   $view->tag = 'nodequeue';
   $view->base_table = 'node';
-  $view->human_name = 'municipalities tabroll';
+  $view->human_name = 'Municipalities tabroll';
   $view->core = 0;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -142,7 +142,7 @@ function ding_tabroll_views_default_views() {
   $view->description = 'Display a list of all nodes in queue \'frontpage tabroll\'';
   $view->tag = 'nodequeue';
   $view->base_table = 'node';
-  $view->human_name = 'frontpage tabroll';
+  $view->human_name = 'Frontpage tabroll';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
