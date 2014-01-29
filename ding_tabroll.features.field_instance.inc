@@ -351,12 +351,12 @@ function ding_tabroll_field_default_field_instances() {
   t('Anchor');
   t('External');
   t('Image');
+  t('Insert into the chosen municipality nodequeue, or frontpage if none is chosen. (Only on creation, not on update)');
   t('Lead');
   t('Link');
   t('Use this for external links (other domains) - this will only be used if the internal link field is empty.');
   t('Use this to make the browser scroll down to an id (do not include the preceding #)');
   t('Write part of the node title to search for content to link to.');
-  t('Insert into the chosen municipality nodequeue, or frontpage if none is chosen. (Only on creation, not on update)');
   t('municipality');
 
   return $field_instances;
